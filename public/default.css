@@ -1,0 +1,32 @@
+#root {
+    text-align: center;
+    border-style: solid;
+    padding-bottom: 25px;
+    width: 100vh;
+    background-color: aquamarine;
+}
+
+body {
+    display: flex;
+    height: 95vh;
+    width: 99%;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+}
+
+h1 {
+    color: red
+}
+
+h2 {
+    color: blue
+}
+
+p {
+    color: orange
+}
+
+li {
+    color:blueviolet;
+}
