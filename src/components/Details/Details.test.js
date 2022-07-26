@@ -34,4 +34,11 @@ describe("Details", () => {
         expect(heading).toBeInTheDocument();
         expect(heading.textContent).toEqual("Bald singer")
     })
+
+    // test("checks for colour change", () =>{
+
+    //     const h1 = screen.getByRole('heading')
+    //     console.log(h1)
+    //     expect(h1).toHaveStyle('')
+    // })
 })

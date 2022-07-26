@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-
-import { Details, Songs, InputForm } from './components'
+import { Details, Songs, InputForm, Socials } from './components'
 
 import '../public/default.css'
 
@@ -18,6 +17,7 @@ const App = () => {
             <Details />
             <InputForm songDetails={songDetails} setSongDetails={setSongDetails} titleValue={titleValue} setTitleValue={setTitleValue} yearValue={yearValue} setYearValue={setYearValue} />
             <Songs songDetails={songDetails} setSongDetails={setSongDetails}/>
+            <Socials />
            </>
 }
 
