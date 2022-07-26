@@ -30,3 +30,9 @@ p {
 li {
     color:blueviolet;
 }
+
+ul {
+    width: 93%;
+    list-style: none;
+    
+}
