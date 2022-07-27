@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import SongItem from '../SongItem';
+import { SongContext } from '../../pages/IndexPage/IndexPageContext'
 
-const Songs = ({songDetails, setSongDetails}) => {
-    
+const Songs = ({}) => {
+    const [songDetails, setSongDetails] = useContext(SongContext)
     return <ul>
             {songDetails.map(item => {
                 
