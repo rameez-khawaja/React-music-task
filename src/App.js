@@ -1,24 +1,19 @@
-import React, { useState } from 'react'
-import { Details, Songs, InputForm, Socials } from './components'
-
-import '../public/default.css'
+import React from 'react'
+import {Routes, Route, useParams} from 'react-router-dom'
+// import { TestComponent } from './components';
+import { IndexPage, AboutPage, UsersPage } from './pages'
+import Layout from './layouts'
 
 const App = () => {
-    const array = [
-        {name: "Gasolina", releaseDate: "2010", id: Math.random()*1000},
-        {name: "Timber", releaseDate: "2013", id: Math.random()*1000},
-        {name: "Give Me Everything", releaseDate: "2011", id: Math.random()*1000}
-    ]
-    const [songDetails, setSongDetails] = useState(array)
-    const [titleValue, setTitleValue] = useState('')
-    const [yearValue, setYearValue] = useState('')
-    
-    return <>
-            <Details />
-            <InputForm songDetails={songDetails} setSongDetails={setSongDetails} titleValue={titleValue} setTitleValue={setTitleValue} yearValue={yearValue} setYearValue={setYearValue} />
-            <Songs songDetails={songDetails} setSongDetails={setSongDetails}/>
-            <Socials />
-           </>
+    return(
+        <Routes>
+        <Route path="/" element={<Layout/>}>
+            <Route path="/" element={<IndexPage/>}></Route>
+            <Route path="/about" element={<AboutPage/>}></Route>
+            <Route path="/users" element={<UsersPage/>}></Route>
+        </Route>
+    </Routes>
+    )
 }
 
 export default App;
